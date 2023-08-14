@@ -1,0 +1,20 @@
+.buttonClick {
+    padding: 10px;
+    background-color: #ad98dd;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    font-weight: 700;
+    color: #633;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .6);
+    transition: .1s  ease-in;
+}
+
+.buttonClick:hover {
+    background-color: #8b76bb;
+}
+
+.buttonClick:active {
+    color: #fff;
+}

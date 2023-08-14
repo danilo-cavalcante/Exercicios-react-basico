@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import StyledText from './components/text/StyledText';
+import Button from './components/button/button';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='exercice'>
+        <StyledText />
+        <StyledText textColor='blue' />
+        <StyledText textColor='green' />
+        <StyledText textColor='red' text='Texto alternativo passado por props'/>
+      </div>
+      <div className='exercice'>
+        <Button/>
+        <Button label='Salvar' />
+        <Button label='Download' />
+        <Button label='Enviar' />
+      </div>
     </div>
   );
 }
